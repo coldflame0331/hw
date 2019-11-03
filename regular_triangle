@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    unsigned int x;
+    printf("Input a integer: ");
+    scanf("%d", &x);
+    printf("\n");
+    
+    int y,z;
+    if(x%2==0){
+        y=x+1; //每行個數
+    }
+    else{
+        y=x;
+    }
+    z=(y+1)/2; //行數
+    
+    int i, j, k;
+    
+    for(i=1; i<=z; i++){
+        k=z-i; //空白參數
+        for(j=1; j<=(i+z-1); j++){
+            if(k==0){
+                printf("*");
+            }
+            else{
+                printf(" ");
+                k-=1;
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
