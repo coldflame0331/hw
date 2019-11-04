@@ -4,7 +4,7 @@ int main()
 {
     unsigned int x=0;
     while(x==0){
-    printf("Input a integer: ");
+    printf("Input a positive integer: ");
     scanf("%d", &x);
     printf("\n");
     }
